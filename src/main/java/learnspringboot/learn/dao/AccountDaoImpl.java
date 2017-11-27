@@ -1,4 +1,4 @@
-package learnspringboot.learn.repository;
+package learnspringboot.learn.dao;
 
 import learnspringboot.learn.entity.Account;
 import org.springframework.beans.factory.annotation.Autowired;

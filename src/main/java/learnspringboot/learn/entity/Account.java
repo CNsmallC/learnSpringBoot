@@ -1,6 +1,8 @@
 package learnspringboot.learn.entity;
 
-public class Account {
+import learnspringboot.learn.common.ientity.IAggregateRoot;
+
+public class Account implements IAggregateRoot{
     private int id;
     private String name;
     private double money;
