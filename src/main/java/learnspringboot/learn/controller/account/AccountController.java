@@ -1,5 +1,8 @@
 package learnspringboot.learn.controller.account;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import learnspringboot.learn.entity.Account;
 import learnspringboot.learn.support.SharedRepositoryFactory;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+@Api("账号接口")
 @RestController
 @RequestMapping("/account")
 public class AccountController {
@@ -18,7 +22,8 @@ public class AccountController {
 //        Account account = SharedRepositoryFactory.getAccountRepository().get(id);
 //        return account;
 //    }
-
+    @ApiOperation("获取账号")
+    @ApiImplicitParam(name="id", value= "账号id" , required = true)
     @RequestMapping(value = "/get",method = RequestMethod.GET)
     public Account get(int id){
         Account account = SharedRepositoryFactory.getAccountRepository().get(id);
