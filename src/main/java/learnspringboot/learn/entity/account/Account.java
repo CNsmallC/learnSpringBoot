@@ -1,4 +1,4 @@
-package learnspringboot.learn.entity;
+package learnspringboot.learn.entity.account;
 
 import learnspringboot.learn.common.ientity.IAggregateRoot;
 
@@ -29,5 +29,23 @@ public class Account implements IAggregateRoot{
 
     public void setMoney(double money) {
         this.money = money;
+    }
+
+    public Account() {
+    }
+
+    public Account(int id, String name, double money) {
+        this.id = id;
+        this.name = name;
+        this.money = money;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", money=" + money +
+                '}';
     }
 }

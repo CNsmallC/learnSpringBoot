@@ -1,7 +1,7 @@
 package learnspringboot.learn.repository;
 
 import learnspringboot.learn.common.db.IRepository;
-import learnspringboot.learn.entity.Account;
+import learnspringboot.learn.entity.account.Account;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

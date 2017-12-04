@@ -1,6 +1,6 @@
 package learnspringboot.learn.dao;
 
-import learnspringboot.learn.entity.Account;
+import learnspringboot.learn.entity.account.Account;
 
 import java.util.List;
 

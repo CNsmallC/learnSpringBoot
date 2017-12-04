@@ -1,7 +1,7 @@
 package learnspringboot.learn.repository;
 
 import learnspringboot.learn.common.db.Repository;
-import learnspringboot.learn.entity.Account;
+import learnspringboot.learn.entity.account.Account;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
